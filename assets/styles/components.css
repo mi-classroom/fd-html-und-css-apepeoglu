@@ -1,14 +1,30 @@
 /* Fav List
 ---------------------------------------------------------------------------- */
-
+/*
 .fav-list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  img{
+    width: 100%;
+    aspect-ratio: 3/1;
+    object-fit: cover;
+  }
+
+  li{
+    margin:var(--m);
+    padding: var(--xxxs);
+    background-color: var(--color-lightest);
+
+    p{
+      margin-top:0;
+    }
+  }
 }
 
 /* Fav Item
----------------------------------------------------------------------------- */
+----------------------------------------------------------------------------
 
 .fav-item {
   background-color: var(--color-lightest);
@@ -40,5 +56,31 @@
 
   address{
     font-size: smaller;
+  }
+}
+*/
+
+.card-list {
+  margin-top: var(--l);
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    margin-bottom: var(--s);
+    padding: var(--xs);
+    background-color: white;
+
+    p{
+      margin-top: 0;
+      margin-left: var(--xxxl);
+    }
+
+    .subtext {
+      font-size: var(--s);
+    }
+
+    .has-icon{
+      position:relative;
+    }
   }
 }

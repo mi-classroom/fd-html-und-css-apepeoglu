@@ -16,10 +16,13 @@
   vertical-align: bottom;
   white-space: nowrap;
   word-wrap: normal;
+  margin-right: var(--xs);
 }
 
 .has-icon::before {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-self: center;
   width: auto;
   height: auto;
   direction: ltr;
@@ -36,6 +39,14 @@
   vertical-align: bottom;
   white-space: nowrap;
   word-wrap: normal;
+  /*
+  content: "folder";
+  position: absolute;
+  top: 0;
+  left: var(--xs);
+  bottom: 0;*/
+  font-size: var(--xxl);
+  position: absolute;
 }
 
 .icon--s {
@@ -70,4 +81,6 @@
   content: attr(data-icon);
 }
 
-.icon--video::before { content: "smart_display"; }
+.icon--video::before { content: "smart_display";}
+.icon--document::before { content: "description";}
+.icon--folder::before { content: "folder";}
