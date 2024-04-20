@@ -39,12 +39,6 @@
   vertical-align: bottom;
   white-space: nowrap;
   word-wrap: normal;
-  /*
-  content: "folder";
-  position: absolute;
-  top: 0;
-  left: var(--xs);
-  bottom: 0;*/
   font-size: var(--xxl);
   position: absolute;
 }
