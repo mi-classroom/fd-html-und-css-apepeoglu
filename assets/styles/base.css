@@ -31,3 +31,27 @@ a {
   color: black;
   text-decoration: none;
 }
+
+figure {
+  background-color: var(--color-lightest);
+  margin-bottom: var(--l);
+  line-height: var(--lh-tight);
+
+  img{
+    width: 100%;
+  }
+
+  h3,p{
+    margin-left: var(--s);
+  }
+
+  h3{
+    font-weight: var(--fw-bold);
+    margin-top: var(--s);
+  }
+
+  p {
+    font-size: var(--s);
+    padding-bottom: var(--s);
+  }
+}
