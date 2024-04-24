@@ -39,8 +39,11 @@
   vertical-align: bottom;
   white-space: nowrap;
   word-wrap: normal;
-  font-size: var(--xxl);
+  font-size: var(--xl);
   position: absolute;
+  top: 0;
+  left: var(--xs);
+  bottom: 0;
 }
 
 .icon--s {

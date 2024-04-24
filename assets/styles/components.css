@@ -1,24 +1,29 @@
-.card-list {
-  margin-top: var(--l);
-  padding: 0;
-  list-style-type: none;
+.welcome-banner{
+  background-color: var(--color-th-orange);
+  color: var(--color-lightest);
+  padding: var(--l);
+  margin-bottom: var(--l);
+  line-height: var(--lh-normal);
 
+  h2{
+    margin-top:0;
+  }
+}
+
+.card-list {
   li {
     margin-bottom: var(--s);
-    padding: var(--xs);
+    padding: var(--s);
+    line-height: var(--lh-normal);
     background-color: white;
+    position: relative;
 
-    p{
-      margin-top: 0;
-      margin-left: var(--xxxl);
+    p, a{
+      margin-left: var(--xxl);
     }
 
     .subtext {
       font-size: var(--s);
-    }
-
-    .has-icon{
-      position:relative;
     }
   }
 }

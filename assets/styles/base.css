@@ -1,23 +1,33 @@
-html, body{
-  margin:0;
+html,
+body {
+  margin: 0;
   background-color: var(--color-light);
   font-family: source-sans-3, Arial, sans-serif;
   font-weight: var(--fw-regular);
   font-size: var(--m);
+  list-style-type: none;
 }
 
-h2{
+h2 {
   font-size: var(--l);
+  font-weight: var(--fw-bold);
+  margin: var(--l) 0;
 }
 
-nav{
+nav {
   background-color: var(--color-lightest);
   padding: var(--s);
 
-  h1{
-    margin-top:0;
+  h1 {
+    margin-top: 0;
   }
 }
-main{
+
+main {
   margin: var(--m);
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
