@@ -31,13 +31,14 @@
 
     line-height: var(--lh-tight);
 
-    p, a{
+    p,
+    a {
       margin-left: var(--xxl);
     }
   }
 }
 
-.gallery-list{
+.gallery-list {
   background-color: var(--color-lightest);
   margin-bottom: var(--l);
   line-height: var(--lh-tight);
