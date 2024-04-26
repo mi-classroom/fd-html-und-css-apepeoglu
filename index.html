@@ -21,8 +21,26 @@
                 <img class="logo" src="./images/p4all.png" alt="ProjectSurvival4All's logo">
             </h1>
         </header>
+        <ul class="burger-menu has-icon icon--menu"></ul>
     </nav>
+    <nav class="second-nav">
+        <ul>
+            <li><a href="#">Mein Bereich</a></li>
+            <li><a href="#">Suche</a></li>
+            <li><a href="#">Aktuelles</a></li>
+        </ul>
+    </nav>
+    <ul class="main-menu">
+        <li><a href="./news.html">News</a></li>
+        <li><a href="./pages/about/about-the-lecturers.html">Barrierefreiheit</a></li>
+        <li><a href="./login.html">Login</a></li>
+        <li><a href="#">DE</a></li>
+    </ul>       
     <main>
+        <form class="search-bar">
+            <input type="text" class="search-field" name="search" placeholder="Suche">
+            <button type="button" class="search-button has-icon icon--search"></button>
+        </form>
         <div class="welcome-banner">
             <h2>Willkommen!</h2>
             <p>In der Bearbeitung von Projekten ist es von entscheidender Bedeutung, nicht nur theoretisches Wissen zu
@@ -82,70 +100,67 @@
         </section>
         <section>
             <h2>Verlauf</h2>
-            <article>
-                <figure class="gallery-list">
+            <div class="gallery-list">
+                <article class="gallery-item">
                     <img src="./images/rednerin-praesentation.jpg" alt="Pitch 1">
                     <h3>Wie halte ich einen Pitch?</h3>
                     <p class="subtext">Monika Engelen</p>
-                </figure>
-            </article>
-            <article>
-                <figure class="gallery-list">
+                </article>
+                <article class="gallery-item">
                     <img src="./images/pitch-strukturieren.jpg" alt="Pitch 2">
                     <h3>Wie halte ich einen Pitch? 2</h3>
                     <p class="subtext">Monika Engelen</p>
-                </figure>
-            </article>
-            <article>
-                <figure class="gallery-list">
+                </article>
+                <article class="gallery-item">
                     <img src="./images/th-koln-header.jpg" alt="Team 1">
                     <h3>Wie arbeite ich im Team?</h3>
                     <p class="subtext">Monika Engelen</p>
-                </figure>
-            </article>
-            <article>
-                <figure class="gallery-list">
+                </article>
+                <article class="gallery-item">
                     <img src="./images/pitch-strukturieren.jpg" alt="Team 2">
                     <h3>Wie arbeite ich im Team?</h3>
                     <p class="subtext">Monika Engelen</p>
-                </figure>
-            </article>
-            <article>
-                <figure class="gallery-list">
+                </article>
+                <article class="gallery-item">
                     <img src="../images/th-koln-header.jpg" alt="Team 3">
                     <h3>Wie arbeite ich im Team?</h3>
                     <p class="subtext">Monika Engelen</p>
-                </figure>
-            </article>
-            <article>
-                <figure class="gallery-list">
+                </article>
+                <article class="gallery-item">
                     <img src="../images/rednerin-praesentation.jpg" alt="Pitch">
                     <h3>Wie halte ich einen Pitch?</h3>
                     <p class="subtext">Monika Engelen</p>
-                </figure>
-            </article>
+                </article>
+            </div>
         </section>
     </main>
     <footer>
-        <h2>Barrierefreiheit</h2>
-        <ul>
-            <li><a href="#">leichte Sprache</a></li>
-            <li><a href="#">leichte Sprache</a></li>
-        </ul>
-        <h2>Feedback</h2>
-        <ul>
-            <li><a href="#">Verbesserungsvorschläge</a></li>
-            <li><a href="#">Content Vorschläge</a></li>
-            <li><a href="#">Feedback Umfrage</a></li>
-        </ul>
-        <h2>Rechtliche Informationen</h2>
-        <ul>
-            <li><a href="#">Verantwortliche</a></li>
-            <li><a href="#">Impressum</a></li>
-            <li><a href="#">Datenschutzhinweise</a></li>
-        </ul>
-        <a href="http://localhost:8080/pages/about/about-the-project.html">Über das Projekt</a>
+        <div class="footer-item">
+            <h2>Barrierefreiheit</h2>
+            <ul>
+                <li><a href="#">leichte Sprache</a></li>
+                <li><a href="#">leichte Sprache</a></li>
+            </ul>
+        </div>
+        <div class="footer-item">
+            <h2>Feedback</h2>
+            <ul>
+                <li><a href="#">Verbesserungsvorschläge</a></li>
+                <li><a href="#">Content Vorschläge</a></li>
+                <li><a href="#">Feedback Umfrage</a></li>
+            </ul>
+        </div>
+        <div class="footer-item">
+            <h2>Rechtliche Informationen</h2>
+            <ul>
+                <li><a href="#">Verantwortliche</a></li>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Datenschutzhinweise</a></li>
+            </ul>
+        </div>
     </footer>
+
+    <script defer src="./assets/scripts/main.js"></script>
 </body>
 
 </html>
