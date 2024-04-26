@@ -1,20 +1,38 @@
 .main-nav {
-  position: relative;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  padding: var(--xs);
   background-color: var(--color-lightest);
 
   .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 150px;
-    margin: 0;
   }
 
   .burger-menu {
     position: absolute;
     top: 20px;
     right: 47px;
+  }
+}
+
+.search-bar {
+  display: flex;
+  margin: 0 var(--s);
+
+  .search-field {
+    width: auto;
+    border: 1px solid var(--color-light);
+  }
+
+  .search-button {
+    position: relative;
+    padding: var(--l);
+    border: 0;
+    background-color: var(--color-th-orange);
+    color: var(--color-lightest);
   }
 }
 
@@ -33,7 +51,7 @@
     margin-bottom: 0;
     cursor: pointer;
 
-    &:hover {
+    &.is-open {
       background-color: var(--color-light);
     }
   }
@@ -104,28 +122,6 @@
 
 .subtext {
   font-size: var(--s);
-}
-
-.search-bar {
-  display: flex;
-  flex-flow: row nowrap;
-  margin-bottom: var(--s);
-
-  .search-field {
-    width: 100%;
-    padding-left: var(--s);
-    border: 0;
-    background-color: var(--color-lightest);
-  }
-
-  .search-button {
-    position: relative;
-    padding: var(--l);
-    border: 0;
-    background-color: var(--color-lightest);
-    color: var(--color-dark);
-  }
-
 }
 
 .main-menu {

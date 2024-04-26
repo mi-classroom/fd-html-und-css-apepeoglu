@@ -1,4 +1,4 @@
-let mainContent = document.querySelector('main');
+let mainContent = document.querySelector('body');
 const mainMenu = document.querySelector('.main-menu');
 const burgerMenu = document.querySelector('.burger-menu');
 burgerMenu.addEventListener('click', openMenu);
