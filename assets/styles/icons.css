@@ -1,3 +1,4 @@
+/* stylelint-disable selector-class-pattern */
 .icon {
   display: inline-block;
   width: auto;
@@ -97,4 +98,12 @@
 
 .icon--search::before {
   content: "search";
+}
+
+.icon--menu::before {
+  content: "menu";
+}
+
+.icon--close::before{
+  content: "close";
 }
