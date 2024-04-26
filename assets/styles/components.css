@@ -81,6 +81,7 @@
 
   .search-field {
     width: 100%;
+    padding-left: var(--s);
     border: 0;
     background-color: var(--color-lightest);
   }
