@@ -2,6 +2,7 @@
   display: inline-block;
   width: auto;
   height: auto;
+  margin-right: var(--xs);
   direction: ltr;
   font-family: var(--ff-icons);
   font-feature-settings: "liga";
@@ -16,22 +17,26 @@
   vertical-align: bottom;
   white-space: nowrap;
   word-wrap: normal;
-  margin-right: var(--xs);
 }
 
 .has-icon::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--xs);
   display: flex;
-  align-items: center;
-  justify-self: center;
   width: auto;
   height: auto;
+  align-items: center;
   direction: ltr;
   font-family: var(--ff-icons);
   font-feature-settings: "liga";
+  font-size: var(--xl);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: normal;
   font-weight: normal;
+  justify-self: center;
   letter-spacing: normal;
   line-height: inherit;
   text-rendering: optimizelegibility;
@@ -39,11 +44,6 @@
   vertical-align: bottom;
   white-space: nowrap;
   word-wrap: normal;
-  font-size: var(--xl);
-  position: absolute;
-  top: 0;
-  left: var(--xs);
-  bottom: 0;
 }
 
 .icon--s {
@@ -93,4 +93,8 @@
 
 .icon--folder::before {
   content: "folder";
+}
+
+.icon--search::before {
+  content: "search";
 }

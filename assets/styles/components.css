@@ -4,15 +4,14 @@
 }
 
 .main-nav {
-  background-color: var(--color-lightest);
   padding: var(--s);
+  background-color: var(--color-lightest);
 }
 
 .welcome-banner {
-  background-color: var(--color-th-orange);
-  margin-bottom: var(--l);
   padding: var(--l);
-
+  margin-bottom: var(--l);
+  background-color: var(--color-th-orange);
   color: var(--color-lightest);
   line-height: var(--lh-normal);
 
@@ -21,34 +20,25 @@
   }
 }
 
-.card-list {
-  li {
-    position: relative;
-
-    margin-bottom: var(--s);
-    padding: var(--s);
-    background-color: white;
-
-    line-height: var(--lh-tight);
-
-    p,
-    a {
-      margin-left: var(--xxl);
-    }
-  }
+.gallery-list {
+  display: grid;
+  gap: var(--m);
+  grid-auto-columns: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(var(--grid-item-size-max), 1fr));
 }
 
-.gallery-list {
+.gallery-item {
   background-color: var(--color-lightest);
-  margin-bottom: var(--l);
   line-height: var(--lh-tight);
 
   img {
     width: 100%;
+    height: 180px;
+    object-fit: fill;
   }
 
-  h3,
-  p {
+  p,
+  h3 {
     margin-left: var(--s);
   }
 
@@ -61,6 +51,64 @@
   }
 }
 
+.card-list {
+  display: grid;
+  gap: var(--m);
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(var(--grid-item-size-max), 1fr));
+
+  li {
+    position: relative;
+    padding: var(--s);
+    background-color: white;
+    line-height: var(--lh-tight);
+
+    p,
+    a {
+      margin-left: var(--xxl);
+    }
+  }
+}
+
 .subtext {
   font-size: var(--s);
+}
+
+.search-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: var(--s);
+
+  .search-field {
+    width: 100%;
+    border: 0;
+    background-color: var(--color-lightest);
+  }
+
+  .search-button {
+    position: relative;
+    padding: var(--l);
+    border: 0;
+    background-color: var(--color-lightest);
+    color: var(--color-dark);
+  }
+
+}
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  background-color: var(--color-dark);
+  color: var(--color-lightest);
+  gap: var(--xxl);
+  line-height: var(--lh-loose);
+
+  .footer-item {
+    padding: var(--l);
+
+    a {
+      color: var(--color-lightest);
+    }
+  }
 }
