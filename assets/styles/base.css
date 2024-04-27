@@ -23,6 +23,12 @@ main {
   margin: var(--m);
 }
 
+article {
+  &.is-hidden {
+    content-visibility: hidden;
+  }
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -30,6 +36,7 @@ a {
 
 footer {
   display: flex;
+  width: 100%;
   flex-flow: row wrap;
   justify-content: flex-start;
   background-color: var(--color-dark);

@@ -1,37 +1,31 @@
-let currentPageContent = document.querySelector('main');
-const content1 = document.querySelector('.content1');
-const content2 = document.querySelector('.content2');
-const content3 = document.querySelector('.content3');
-
+// Tabs of the tab navigation
 const tab1 = document.querySelector('.second-nav ul li:first-child');
-tab1.addEventListener('click', openTab1);
-
 const tab2 = document.querySelector('.second-nav ul li:nth-child(2)');
-tab2.addEventListener('click', openTab2);
-
 const tab3 = document.querySelector('.second-nav ul li:last-child');
-tab3.addEventListener('click', openTab3);
 
-function openTab1() {
-    tab1.classList.add('is-open');
-    tab2.classList.remove('is-open');
-    tab3.classList.remove('is-open');
-    currentPageContent.textContent = ''; // Clear the existing content
-    currentPageContent.appendChild(content1.cloneNode(true)); // Append the desired content for Tab 1
-}
+// Content of the tabs
+const tabContentOptions = document.querySelectorAll('.tab-content');
 
-function openTab2() {
-    tab2.classList.add('is-open');
-    tab1.classList.remove('is-open');
-    tab3.classList.remove('is-open');
-    currentPageContent.textContent = ''; // Clear the existing content
-    currentPageContent.appendChild(content2.cloneNode(true)); // Append the desired content for Tab 1
-}
+const tabNavigation = document.querySelector('.second-nav ul');
+tabNavigation.addEventListener('click', openTab);
 
-function openTab3() {
-    tab3.classList.add('is-open');
-    tab1.classList.remove('is-open');
-    tab2.classList.remove('is-open');
-    currentPageContent.textContent = ''; // Clear the existing content
-    currentPageContent.appendChild(content3.cloneNode(true)); // Append the desired content for Tab 1
+function openTab(event) {
+    const tabList = [tab1, tab2, tab3];
+    const openedTab = event.target;
+
+    // Checks which tab is opened and adds the active class to it
+    for (let i = 0; i < tabList.length; i++) {
+        if (openedTab.textContent == tabList[i].textContent) {
+            tabList[i].classList.add('is-active'); // Highlights the opened tab
+            if (tabContentOptions[i].classList.contains('is-hidden')) {
+                tabContentOptions[i].classList.remove('is-hidden'); // Makes content of the opened tab visible
+            }
+        }
+        else {
+            if (tabList[i].classList.contains('is-active')) {
+                tabList[i].classList.remove('is-active');
+            }
+            tabContentOptions[i].classList.add('is-hidden');
+        }
+    }
 }
