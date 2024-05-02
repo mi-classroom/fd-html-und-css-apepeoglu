@@ -6,6 +6,7 @@ const tab3 = document.querySelector('.second-nav ul li:last-child');
 // Content of the tabs
 const tabContentOptions = document.querySelectorAll('.tab-content');
 
+// Event listener for the tab navigation
 const tabNavigation = document.querySelector('.second-nav ul');
 tabNavigation.addEventListener('click', openTab);
 
@@ -13,12 +14,13 @@ function openTab(event) {
     const tabList = [tab1, tab2, tab3];
     const openedTab = event.target;
 
-    // Checks which tab is opened and adds the active class to it
+    // Checks which tab is opened and highlights it through the class 'is-active'
+    // Class 'is-hidden' is added/removed to show/hide the content of the tabs
     for (let i = 0; i < tabList.length; i++) {
         if (openedTab.textContent == tabList[i].textContent) {
-            tabList[i].classList.add('is-active'); // Highlights the opened tab
+            tabList[i].classList.add('is-active');
             if (tabContentOptions[i].classList.contains('is-hidden')) {
-                tabContentOptions[i].classList.remove('is-hidden'); // Makes content of the opened tab visible
+                tabContentOptions[i].classList.remove('is-hidden');
             }
         }
         else {
