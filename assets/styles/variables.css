@@ -1,0 +1,28 @@
+:root {
+  --ff-icons: material-icons;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --lh-tight: 100%;
+  --lh-normal: 130%;
+  --lh-loose: 150%;
+  --base-font-size: 1rem;
+  --xxxs: calc(var(--base-font-size) * 0.35);
+  --xxs: calc(var(--base-font-size) * 0.5);
+  --xs: calc(var(--base-font-size) * 0.65);
+  --s: calc(var(--base-font-size) * 0.8);
+  --m: var(--base-font-size);
+  --l: calc(var(--base-font-size) * 1.2);
+  --xl: calc(var(--base-font-size) * 1.4);
+  --xxl: calc(var(--base-font-size) * 1.6);
+  --xxxl: calc(var(--base-font-size) * 1.9);
+  --color-light: #e8e8e8;
+  --color-lightest: #fff;
+  --color-dark: #5e636e;
+  --color-th-pink: #b62584;
+  --color-th-orange: #ea5b0c;
+  --color-th-red: #c60c0f;
+  --color-blue: #4285F4;
+  --grid-item-size-max: 300px;
+}

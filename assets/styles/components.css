@@ -1,0 +1,151 @@
+.main-nav {
+  display: flex;
+  justify-content: center;
+  padding: var(--xs);
+  background-color: var(--color-lightest);
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+  }
+
+  .burger-menu {
+    position: absolute;
+    top: 20px;
+    right: 47px;
+  }
+}
+
+.search-bar {
+  display: flex;
+  margin: 0 var(--s);
+
+  .search-field {
+    width: auto;
+    border: 1px solid var(--color-light);
+  }
+
+  .search-button {
+    position: relative;
+    padding: var(--l);
+    border: 0;
+    background-color: var(--color-th-orange);
+    color: var(--color-lightest);
+  }
+}
+
+.second-nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  background-color: var(--color-lightest);
+
+  li {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: var(--m);
+    margin-bottom: 0;
+    cursor: pointer;
+
+    &.is-active {
+      background-color: var(--color-light);
+    }
+  }
+}
+
+.welcome-banner {
+  padding: var(--l);
+  margin-bottom: var(--l);
+  background-color: var(--color-th-orange);
+  color: var(--color-lightest);
+  line-height: var(--lh-normal);
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.gallery-list {
+  display: grid;
+  gap: var(--m);
+  grid-auto-columns: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(var(--grid-item-size-max), 1fr));
+}
+
+.gallery-item {
+  background-color: var(--color-lightest);
+  line-height: var(--lh-tight);
+
+  img {
+    width: 100%;
+    height: 180px;
+    object-fit: fill;
+  }
+
+  p,
+  h3 {
+    margin-left: var(--s);
+  }
+
+  h3 {
+    margin-top: var(--s);
+  }
+
+  p {
+    padding-bottom: var(--s);
+  }
+}
+
+.card-list {
+  display: grid;
+  gap: var(--m);
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(var(--grid-item-size-max), 1fr));
+
+  /* stylelint-disable-next-line no-descending-specificity */
+  li {
+    position: relative;
+    padding: var(--s);
+    background-color: white;
+    line-height: var(--lh-tight);
+
+    p,
+    a {
+      margin-left: var(--xxl);
+    }
+  }
+}
+
+.subtext {
+  font-size: var(--s);
+}
+
+.main-menu {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 200px;
+  height: calc(100vh - var(--xl) * 2);
+  flex-direction: column;
+  padding: var(--xl);
+  background-color: var(--color-light);
+  gap: var(--l);
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+
+  &.is-active {
+    transform: translateX(0);
+  }
+
+  /* stylelint-disable-next-line no-descending-specificity */
+  a {
+    color: black;
+    font-weight: var(--fw-medium);
+  }
+}
